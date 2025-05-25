@@ -1,7 +1,7 @@
 
 var http = require('http')
 var _url = require('url')
-var qs = require('qs')
+var qs = require('neoqs/legacy')
 
 var buffer = (req, done) => {
   var data = ''

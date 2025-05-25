@@ -9,7 +9,7 @@ var request = require('request-compose').extend({
 var Provider = require('../util/provider'), provider
 var Client = require('../util/client'), client
 
-var qs = require('qs')
+var qs = require('neoqs/legacy')
 var jws = require('jws')
 var oidc = require('../../lib/oidc')
 var keys = require('../util/keys')

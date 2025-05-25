@@ -29,7 +29,7 @@
     "url": "https://github.com/simov/grant.git"
   },
   "dependencies": {
-    "qs": "^6.14.0",
+    "neoqs": "^6.13.0",
     "request-compose": "^2.1.7",
     "request-oauth": "^1.0.1"
   },

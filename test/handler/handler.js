@@ -1,6 +1,6 @@
 
 var t = require('assert')
-var qs = require('qs')
+var qs = require('neoqs/legacy')
 
 var request = require('request-compose').extend({
   Request: {cookie: require('request-cookie').Request},
