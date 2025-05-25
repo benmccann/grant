@@ -1,7 +1,7 @@
 
 var Hapi = require('@hapi/hapi')
 var yar = require('@hapi/yar')
-var qs = require('qs')
+var qs = require('fast-querystring')
 var grant = require('../../').hapi()
 
 

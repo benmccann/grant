@@ -1,7 +1,7 @@
 
 var t = require('assert')
 var http = require('http')
-var qs = require('qs')
+var qs = require('fast-querystring')
 var compose = require('request-compose')
 var request = require('../lib/client')
 

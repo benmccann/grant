@@ -2,7 +2,7 @@
 var t = require('assert')
 var http = require('http')
 var url = require('url')
-var qs = require('qs')
+var qs = require('fast-querystring')
 var cookie = require('cookie')
 
 var express = () => require('express')()
