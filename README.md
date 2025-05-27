@@ -16,7 +16,7 @@
 
 - **[Providers](#grant)**
 - **Handlers**
-  - [Express](#handlers) / [Koa](#handlers) / [Hapi](#handlers) / [Fastify](#handlers)
+  - [Express](#handlers) / [Koa](#handlers) / [Hapi](#handlers) / [Fastify](#handlers) / [SvelteKit](#handlers)
   - [AWS Lambda](#handlers) / [Azure Function](#handlers) / [Google Cloud Function](#handlers) / [Vercel](#handlers)
 - **Configuration**
   - [Basics](#configuration-basics) / [Description](#configuration-description) / [Values](#configuration-values) / [Scopes](#configuration-scopes)
@@ -99,6 +99,17 @@ fastify()
   .register(cookie)
   .register(session, {secret: 'grant', cookie: {secure: false}})
   .register(grant({/*configuration - see below*/}))
+```
+</details>
+
+<details><summary>SvelteKit</summary>
+
+```js
+import grant from 'grant';
+
+export const handle = grant.sveltekit({
+  config: {/*configuration - see below*/}, session: {secret: 'grant'}
+});
 ```
 </details>
 
